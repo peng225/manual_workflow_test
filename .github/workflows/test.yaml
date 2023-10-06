@@ -1,0 +1,19 @@
+name: "manual workflow with inputs"
+
+on: "workflow_dispatch"
+  inputs:
+    param1:
+      default: "v1"
+      type: string
+    param2:
+      type: string
+
+
+jobs:
+  release:
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: "echo inputs"
+        run: |
+            echo ${{ inputs.param1 }}
+            echo ${{ inputs.param2 }}
