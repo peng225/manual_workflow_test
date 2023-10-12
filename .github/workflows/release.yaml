@@ -16,11 +16,12 @@ jobs:
           - name: Run GoReleaser
             run: |
                 echo ${GITHUB_REF_NAME}
+                echo /repos/${{ github.repository }}/releases
                 gh api \
                 -H "Accept: application/vnd.github+json" \
                 --method POST \
                 -H "X-GitHub-Api-Version: 2022-11-28" \
-                /repos/OWNER/REPO/releases \
+                /repos/${{ github.repository }}/releases \
                 -f tag_name='${GITHUB_REF_NAME}' \
                 -f target_commitish='master' \
                 -F draft=true \
