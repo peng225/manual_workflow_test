@@ -1,10 +1,6 @@
 name: Task
 description: タスク作成のテンプレート
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for taking the time to create a task
   - type: textarea
     id: gaiyo
     attributes:
@@ -20,12 +16,11 @@ body:
         設計を書く
         - ああ
         - いいい
-  - type: checkboxes
+  - type: textarea
     id: ready-check
     attributes:
       label: Ready の条件
-      description: ここは触らなくてよい 
-      options:
-        - label: 条件1
-        - label: 条件2
-        - label: 条件3
+      value: |
+        - [ ] 条件1
+        - [ ] 条件2
+        - [ ] 条件3
