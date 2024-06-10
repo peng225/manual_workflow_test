@@ -1,6 +1,10 @@
 name: Task
 description: タスク作成のテンプレート
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
   - type: textarea
     id: gaiyo
     attributes:
