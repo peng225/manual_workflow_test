@@ -14,6 +14,16 @@ entries:
   test2:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2024-06-20T08:57:56.023412346Z"
+    description: A Helm chart for Kubernetes
+    digest: 2b04002e57fb696a2cf2a75bebf0f9ebfa2f6631576857174b0c210abe85bbdc
+    name: test2
+    type: application
+    urls:
+    - https://github.com/peng225/workflow_test/releases/download/test2-chart-v0.1.1/test2-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2024-06-20T08:49:46.707320787Z"
     description: A Helm chart for Kubernetes
     digest: 7e3d9d348591b7f6eb69eae1a22f7560d9cb9cec63a387e6a4547b646f584f05
@@ -22,4 +32,4 @@ entries:
     urls:
     - https://github.com/peng225/workflow_test/releases/download/test2-chart-v0.1.0/test2-0.1.0.tgz
     version: 0.1.0
-generated: "2024-06-20T08:49:46.707326758Z"
+generated: "2024-06-20T08:57:56.023467769Z"
