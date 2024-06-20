@@ -1,0 +1,3 @@
+owner: peng225
+git-repo: workflow_test
+release-name-template: "{{ .Name }}-chart-v{{ .Version }}"
